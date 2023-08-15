@@ -113,23 +113,23 @@ const SubNavbar = () => {
             <LiaSearchSolid></LiaSearchSolid>
           </button>
         </div>
-        <div className="flex flex-col items-center gap-4 md:flex-row md:gap-0 duration-300">
+        <div className="flex items-center duration-300">
           <Link to="/">
             <div className="flex items-center gap-4 px-4 text-[#393280] dark:text-white font-semibold text-xl md:text-sm">
               <AiOutlineUser></AiOutlineUser>
-              <p>ACCOUNT</p>
+              <p className="hidden md:block">ACCOUNT</p>
             </div>
           </Link>
           <Link to="/">
-            <div className="flex items-center gap-4 px-4 text-[#393280] dark:text-white font-semibold text-xl md:text-sm border-x-2 border-none md:border-[#D1D1D1]">
+            <div className="flex items-center gap-4 px-4 text-[#393280] dark:text-white font-semibold text-xl md:text-sm border-x-2 md:border-[#D1D1D1]">
               <AiOutlineShopping></AiOutlineShopping>
-              <p>CART:(0$)</p>
+              <p className="hidden md:block">CART:(0$)</p>
             </div>
           </Link>
           <Link to="/">
-            <div className="flex items-center gap-4 px-4 text-[#393280] dark:text-white font-semibold text-xl md:text-sm border-r-2 border-none md:border-[#d1d1d1] ">
+            <div className="flex items-center gap-4 px-4 text-[#393280] dark:text-white font-semibold text-xl md:text-sm border-r-2 md:border-[#d1d1d1] ">
               <AiOutlineHeart></AiOutlineHeart>
-              <p>WISHLIST</p>
+              <p className="hidden md:block">WISHLIST</p>
             </div>
           </Link>
           <div>
@@ -147,6 +147,7 @@ const SubNavbar = () => {
           </div>
         </div>
       </div>
+      <div  className="h-[1px] bg-gray-500 mx-0 md:mx-16 dark:mx-0 duration-500"></div>
     </div>
   );
 };
