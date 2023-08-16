@@ -49,7 +49,7 @@ const SubNavbar = () => {
       element.classList.remove("dark");
     }
   }
-
+  
   onWindowMatch();
 
   useEffect(() => {
@@ -105,7 +105,7 @@ const SubNavbar = () => {
         px-6"
         >
           <input
-            className="bg-transparent outline-none rounded-[20px] h-[45px] w-auto xl:w-[400px] 2xl:w-[600px] placeholder:text-[#BCBCBC] placeholder:text-sm duration-300"
+            className="bg-transparent outline-none rounded-[20px] w-full h-[45px] mx-2 xl:w-[400px] 2xl:w-[600px] placeholder:text-[#BCBCBC] placeholder:text-sm transition-[width] duration-300"
             type="text"
             placeholder="Search books"
           />
@@ -147,7 +147,7 @@ const SubNavbar = () => {
           </div>
         </div>
       </div>
-      <div  className="h-[1px] bg-gray-500 mx-0 md:mx-16 dark:mx-0 duration-500"></div>
+      <div  className="h-[1px] bg-[#E0E0E0] mx-0 md:mx-16 dark:mx-0 duration-500"></div>
     </div>
   );
 };
