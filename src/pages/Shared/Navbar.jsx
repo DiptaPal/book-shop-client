@@ -38,12 +38,12 @@ const navbars = [
 const Navbar = () => {
   return (
     <>
-      <div className="my-0 md:my-8 flex justify-center items-center gap-14">
-        <ul className="justify-center items-center text-base lg:text-lg hidden font-medium md:flex">
+      <div className="my-0 sx:my-8 flex justify-center items-center gap-14">
+        <ul className="justify-center items-center text-sm sm:text-lg lg:text-lg hidden font-medium sx:flex">
           {navbars.map((navbar, index) => (
             <li
               key={index}
-              className="border-[#D1D1D1] border-r-2 px-6 lg:px-12 first:pl-0 last:border-r-0 last:pr-0"
+              className="border-[#D1D1D1] border-r-2 px-3 lg:px-12 first:pl-0 last:border-r-0 last:pr-0"
             >
               <NavLink
                 to={navbar.path}
@@ -149,7 +149,7 @@ const Navbar = () => {
       </ul> */}
 
       {/* mobile device menu */}
-      <div className="my-8 block md:hidden">
+      <div className="my-8 block sx:hidden">
         <Swiper
           slidesPerView={2}
           breakpoints={{
