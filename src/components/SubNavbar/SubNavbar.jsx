@@ -24,8 +24,7 @@ const SubNavbar = () => {
   const dispatch = useDispatch();
 
   const element = document.documentElement;
-   const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
-  console.log(darkQuery);
+  const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
   const options = [
     {
       icon: "sunny",
