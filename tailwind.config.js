@@ -9,7 +9,10 @@ export default {
     extend: {
       colors:{
         primary: "#ED553B",
-      }
+      },
+      screens: {
+        'sx': '540px',
+      },
     },
   },
   plugins: [],
